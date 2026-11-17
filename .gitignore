@@ -1,0 +1,11 @@
+/target/
+**/*.rs.bk
+.env
+.env.*
+!.env.example
+*.log
+*.pcap
+*.pcapng
+*.core
+core.*
+*.dump

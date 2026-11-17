@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    "crates/phantom-cli",
+    "crates/phantom-core",
+    "crates/phantom-network",
+    "crates/phantom-crypto",
+    "crates/phantom-protocol",
+    "crates/phantom-coordinator",
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+repository = "https://github.com/R4winput/PHANTOM"
+
+[workspace.dependencies]
+clap = { version = "4.5", features = ["derive"] }
+tokio = { version = "1.53", features = ["macros", "rt-multi-thread"] }
